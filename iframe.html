@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+</head>
+
+<body>
+    <!-- The <iframe> HTML element represents a nested browsing context,
+         embedding another HTML page into the current one. -->
+    <!-- Simple The HTML iframe tag is used to display a nested webpage
+              it represent a webpage within a webpage -->
+
+
+
+    <!-- frameborder="0"
+    ➜ Border hide
+    
+    allowfullscreen
+    ➜ Full screen allow
+    
+    autoplay
+    ➜ Auto play give permission to allow when click-->
+
+    <!-- allow="autoplay"
+    ➜ Autoplay ki permission
+    ➜ Browser iframe ko video auto-play karne ki ijazat deta hai -->
+
+
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/xSQeV-t0gEg?si=rlM0bKEMtZWX4gV1"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+
+    <!-- autoplay=1
+    ➜ Auto play ON
+    ➜ YouTube ko command deta hai ke video page load hote hi chalao -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xSQeV-t0gEg?autoplay=1" allow="autoplay"
+        allowfullscreen>
+    </iframe>
+
+    <!-- mute=1
+    ➜ Sound OFF
+    ➜ Video bina awaaz ke start hogi -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xSQeV-t0gEg?autoplay=mute1" allow="autoplay"
+        allowfullscreen>
+    </iframe>
+    <hr>
+
+
+    <iframe src="https://www.wikipedia.org/" frameborder="1"></iframe>
+
+    <hr>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28965.27496900657!2d67.09306579315688!3d24.8413198834695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33bc211b229af%3A0x1c5a3135d6475988!2sKorangi%20Industrial%20Area%2C%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1782155866362!5m2!1sen!2s"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+    <!-- The <table> HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. we must write everything inside the table -->
+    <!-- Table element defines an HTML table which is used to organize data into rows and columns -->
+    <!-- tbody element groups the main content (data rows) of the an HTML table -->
+    <!-- thead element groups the header content (table headings) of an html table -->
+    <!-- th element defines a header cell (table heading) within an table -->
+    <!-- td element represents data cell within an table -->
+    <!-- tr element defines a row within an HTML table -->
+
+    <center>
+        <h1>Table in HTML</h1>
+        <table border="1" cellpadding="8" style="border-collapse: collapse;">
+            <thead>
+                <tr bgcolor="skyblue">
+                    <th colspan="7">table</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="6">Hourse</th>
+                    <th>Mon</th>
+                    <th>Mon</th>
+                    <th>Mon</th>
+                    <th>Mon</th>
+                    <th>Mon</th>
+                    <th>Mon</th>
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td>Math</td>
+                    <td>Math</td>
+                    <td>Math</td>
+                    <td>Math</td>
+                    <td>Math</td>
+                </tr>
+                <tr>
+                    <td>science</td>
+                    <td>science</td>
+                    <td>science</td>
+                    <td>science</td>
+                    <td>science</td>
+                    <td>science</td>
+                </tr>
+                <tr>
+                    <td colspan="6" align="center">lunch</td>
+
+                </tr>
+                <tr>
+                    <td>SST</td>
+                    <td>SST</td>
+                    <td>SST</td>
+                    <td>SST</td>
+                    <td>SST</td>
+                    <td rowspan="2">Games</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>CS</td>
+                    <td>CS</td>
+                    <td>CS</td>
+                    <td>CS</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="7" align="center">schedule</td>
+                </tr>
+            </tfoot>
+        </table>
+    </center>
+</body>
+
+</html>
