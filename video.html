@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+</head>
+
+<body>
+    <!-- The <video> HTML element embeds a media player which supports video playback into the document. -->
+
+
+
+    <!-- Audio (<audio>): The <audio> element is used to embed audio content in a webpage. It supports various audio formats and provides controls for playback -->
+
+    <!--
+    controls: Adds playback controls (play, pause, volume, etc.).
+
+    autoplay: Starts playback automatically. 
+
+    loop: Repeats the media indefinitely.
+
+    preload: Specifies if the media should be loaded when the page loads. 
+    preload="auto" → browser audio ko pehle se load karne ki koshish karega.
+    preload="none" → jab tak user Play na kare, file load nahi hogi.
+    preload="metadata" → sirf basic information (duration, size waghera) load hogi.
+    
+    poster:Displays an image before the media loads.
+
+    mutes: specifies that the audio output should be muted
+     -->
+    <video controls width="500" poster="./contact-img.png">
+        <source src="/videoo.mp4" type="video/mp4">
+        <!-- benefit of soucrce we can add multiple format if the mp3 does not work wav format display -->
+    </video>
+</body>
+
+</html>

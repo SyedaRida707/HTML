@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+
+<body>
+    <!--? The <form> tag is used to create an HTML form for user input. -->
+
+    <!--? The <input> HTML element is used to create interactive controls for web-based forms to accept data from the user. We must write inside the tag. -->
+
+    <form>
+        <label for="username" >Name</label>
+        <input type="text" id="username" placeholder="enter your name" required autocomplete="off" size="20" value="Ridaa" disabled>
+        <br>
+        <label for="useremail">Email</label>
+        <input type="email" id="useremail">
+        <br>
+        <label for="usertext">Comments</label>
+        <textarea id="usertext" rows="5" cols="20"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+        <br>
+        <label for="userpassword">Password</label>
+        <input type="password" id="userpassword">
+        <br>
+        <label for="usernumber">Number</label>
+        <input type="number" id="usernumber" max="11" min="0">
+        <br>
+        <label for="radioBTN">Gender</label>
+        <input type="radio" name="genderCheck" id="radioBTN"> Male
+        <input type="radio" name="genderCheck" id="radioBTN"> Female
+        <br>
+        <label for="checkBoxes">fav car</label>
+        <input type="checkbox" name="car1" id="checkBoxes"> Farari
+        <input type="checkbox" name="car2" id="checkBoxes"> landcruser
+        <input type="checkbox" name="car3" id="checkBoxes"> swift
+        <br>
+        <label for="country">Select Country</label>
+        <select id="country">
+            <option value="USA">usa</option>
+            <option value="pakistan">pakistan</option>
+            <option value="Landan" selected>Landan</option>
+        </select>
+
+        <br>
+        <label for="country">Select Country</label>
+        <input type="text" id="country" list="countries">
+        <datalist id="countries">
+            <option value="USA"></option>
+            <option value="pakistan"></option>
+            <option value="Landan" selected></option>
+        </datalist>
+        <label for="userfile">file upload</label>
+        <input type="file" id="userfile">
+    </form>
+
+</body>
+
+</html>
