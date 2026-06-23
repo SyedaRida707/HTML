@@ -8,58 +8,101 @@
 </head>
 
 <body>
+    <!-- Semantic HTML5 Form Elements:
+    Semantic HTML5 form elements like <label>, <fieldset>, and <legend> provide better structure and accessibility to forms.
+
+    <label>: Associates text labels with form elements for better user understanding.
+    <fieldset>: Groups related form elements together, creating a visual and semantic grouping.
+    <legend>: Provides a caption or title for the <fieldset> element. -->
     <center>
         <h1>Form HTML</h1>
-        <fieldset width="200">
-            <legend>form</legend>
+        <fieldset>
+            <legend align="center">form</legend>
             <form>
                 <label for="Name">Name</label>
+                <br>
                 <input type="text" id="Name" placeholder="enter your name" required pattern="[A-Za-z]+">
                 <br>
-                Email <input type="email">
+                <label for="email">Email</label>
                 <br>
-                password <input type="password" pattern="[0-4]{3}">
+                <input type="email" id="email">
                 <br>
-                TelePhone <input type="tel">
+                <label for="password">password</label>
                 <br>
-                Age <input type="number" step="1">
+                <input type="password" id="password" pattern="[0-4]{3}">
                 <br>
-                Date <input type="date">
+                <label for="telephone">TelePhone</label>
                 <br>
-                Time <input type="time">
+                <input type="tel" id="telephone">
                 <br>
-                Time-Date <input type="datetime-local">
+                <label for="age">Age</label>
                 <br>
-                Month <input type="month">
+                <input type="number" step="1" id="age">
                 <br>
-                Week <input type="week" name="" id="">
+                <label for="date">Date</label>
                 <br>
-                Url <input type="url" name="" id="">
+                <input type="date" id="date">
                 <br>
-                Search <input type="search">
+                <label for="time">Time</label>
                 <br>
-                Color <input type="color" value="red" name="" id="">
+                <input type="time" id="time">
                 <br>
-                CheckBox <input type="checkbox" name="CS">CS
-                <input type="checkbox" name="Web"> web
+                <label for="dateTime">Time-Date</label>
                 <br>
-                radio <input type="radio" name="gender"> Male
-                <input type="radio" name="gender"> Female
+                <input type="datetime-local" id="dateTime">
                 <br>
-                File <input type="file">
+                <label for="month">Month</label>
                 <br>
-                hidden <input type="hidden" placeholder="enter">
+                <input type="month" id="month">
+                <br>
+                <label for="week">Week</label>
+                <br>
+                <input type="week" name="" id="week">
+                <br>
+                <label for="linkss">Url</label>
+                <br>
+                <input type="url" name="" id="linkss">
+                <br>
+                <label for="search">Search</label>
+                <br>
+                <input type="search" id="search">
+                <br>
+                <label for="Color">Color</label>
+                <br>
+                <input type="color" value="red" name="" id="Color">
+                <br>
+                <label for="CheckBox">CheckBox</label>
+                <input type="checkbox" name="CS" id="CheckBox">CS
+                <input type="checkbox" name="Web" id="CheckBox"> web
+                <br>
+                <label for="radio">radio</label>
+                <input type="radio" name="gender" id="radio"> Male
+                <input type="radio" name="gender" id="radio"> Female
+                <br>
+                <label for="File">File</label>
+                <br>
+                <input type="file">
+                <br>
+                <label for="hidden">hidden</label>
+                <br>
+                <input type="hidden" placeholder="enter">
                 <br>
                 image <input type="image" src="" alt="">
                 <br>
                 <input type="reset" value="Reset">
                 <input type="Submit" value="Submit">
                 <br>
-                Range<input type="range" name="" id="">
+                <label for="Range">Range</label>
                 <br>
-                <textarea rows="10" cols="20"></textarea>
+                <input type="range" name="" id="Range" value="90" min="0" max="100">
                 <br>
-                <select>
+                <label for="comments">comments</label>
+                <br>
+                <textarea rows="10" cols="20" id="comments">comments</textarea>
+                <br>
+                <label for="choose">choose</label>
+                <br>
+                <select id="choose">
                     <option value="subjects">urdu</option>
                     <option value="subjects" selected>---------science---------</option>
                     <option value="subjects">math</option>
