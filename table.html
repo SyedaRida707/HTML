@@ -15,18 +15,19 @@
     <!-- th element defines a header cell (table heading) within an table -->
     <!-- td element represents data cell within an table -->
     <!-- tr element defines a row within an HTML table -->
+    <!-- scope attribute use just th tag only for screen readers  => col|row|colgroup|rowgroup multiple colgroup rowgroup single col row-->
 
     <center>
         <h1>Table in HTML</h1>
         <table border="1" cellpadding="8" style="border-collapse: collapse;">
             <thead>
                 <tr bgcolor="skyblue">
-                    <th colspan="7">table</th>
+                    <th colspan="7" scope="colgroup">table</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th rowspan="6">Hourse</th>
+                    <th rowspan="6" scope="rowgroup">Hourse</th>
                     <th>Mon</th>
                     <th>Mon</th>
                     <th>Mon</th>
@@ -75,6 +76,40 @@
                     <td colspan="7" align="center">schedule</td>
                 </tr>
             </tfoot>
+        </table>
+        <table border="1">
+
+            <thead>
+                <tr style="background-color: skyblue;">
+                    <th scope="col">Name</th>
+                    <th scope="col">Math</th>
+                    <th scope="col">Science</th>
+                    <th scope="col">English</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">Ali</th>
+                    <td>85</td>
+                    <td>90</td>
+                    <td>88</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Ahmed</th>
+                    <td>78</td>
+                    <td>82</td>
+                    <td>80</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th scope="colgroup" colspan="4">Result Table</th>
+                </tr>
+            </tfoot>
+
         </table>
     </center>
 </body>
